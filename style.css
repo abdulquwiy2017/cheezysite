@@ -1,0 +1,374 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(35, 35, 35);
+    color: whitesmoke;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.line{
+    margin-top: 1em;
+    width: 3em;
+    height: .1em;
+}
+.sand-line{
+    background-color: whitesmoke;
+}
+.grey-line{
+   
+    background-color: rgb(97, 97, 97);
+    justify-content: center;
+}
+.grey{
+    color: rgb(27, 26, 26);
+    font-size: 1em;
+    font-weight: bold;
+}
+button{
+    background-color: rgb(67, 67, 67);
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    padding: .5em;
+}
+
+/*fixing backgrounds*/
+
+.ship{
+    background-image: url('images/container.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+}
+.beachs{
+    background-image: url('images/beachs.jpg');
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+}
+.volcano{
+    background-image: url('images/volcano.jpg');
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/*text*/
+.top{
+    text-align: center;
+}
+
+
+.submit{
+    background-color: rgb(22, 22, 22);;
+}
+.light-grey-bg{
+    background-color: rgb(55, 55, 55);
+}
+
+
+
+.first-part{
+    background-image: url('images/lonely.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.third-part{
+    background-color: rgb(22, 22, 22);
+    
+}
+
+/*navigation*/
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo>img{
+    width: 150px;
+    height:150px;
+    border: none;
+    border-radius: 100%;
+}
+.navigation{
+    display:flex;
+}
+.nav{
+    margin: auto;
+    margin-left:2em;
+    margin-right: 2em;
+}
+.touch{
+    border: 1px solid rgb(23, 23, 66);
+    text-align: center;
+    padding: .2em;
+    background-color: grey;
+}
+@media (max-width:675px) {
+    .navigation{
+        flex-direction: column;
+        margin: auto;
+        margin-right: 4em;
+    }
+    .touch{
+        margin-top: 1em;
+    }
+    
+}
+/*ANIMATIONS*/
+
+.first-part,
+.second-part,
+.third-part,
+.fourth-part
+            {
+    animation-name:grow;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+
+}
+nav,
+.part {
+    animation-name: first-part;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    
+    
+}
+
+.customer-service{
+    margin: auto;
+    margin-top: 5em;
+    width: 30%;
+    text-align: center;
+    color: rgb(11, 44, 128);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    font-style: italic;
+    animation-name: customer-service;
+    animation-duration:5s;
+    animation-iteration-count: 3;
+    animation-fill-mode: both;
+
+
+}
+@keyframes customer-service{
+    100%{transform: rotate(180deg);}
+}
+
+
+@keyframes grow{
+    from{opacity: 0%; width:0%}
+    to{opacity: 100%; width:100%}
+}
+
+@keyframes first-part{
+    from{opacity:0%}
+    to{opacity: 100%;}
+}
+
+
+
+
+
+.image:hover{
+    font-size:x-small;
+    width: 20%;
+    transition: all 1s 0s ease ;
+  
+
+}
+.touch:hover{
+    background-color: black;
+    padding: .5em;
+    border: 1px solid black;
+    color: white;
+    font-size:1em;
+}
+@media (max-width:675px) {
+    .image:hover{
+        width: 80%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER*/
+.body{
+    padding: 2em;
+}
+.header{
+    margin:20em 20em 2em 0 ;
+}
+.title{
+    color: rgb(0, 91, 227);
+    font-size: 6em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.travelling{
+    margin-top: -2em;
+}
+.subtitle{
+    color:rgb(0, 106, 128);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+/*second part*/
+
+.second-part{
+    margin-top: 5em;
+    margin-bottom: 0;
+}
+.pictures{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+.image{
+    width: 30%;
+    height: 40vh;
+    font-size: 1rem;
+    margin: auto;
+    
+}
+
+.post{
+
+    margin-top: 30vh;
+}
+
+.word{
+    margin: 2em auto;
+    width: 50vw;
+}
+.grey-line{
+    margin: auto;
+}
+.blog{
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+@media (max-width:675px) {
+    .pictures{
+        flex-direction: column;
+    }
+    
+    .image{
+        margin: 2em auto;
+        width: 90%;
+    }
+}
+
+
+
+/*third part*/
+
+.third-part{
+    margin-top: 5em;
+    padding: 2em;
+}
+.sign{
+    font-size: 0.7em;
+    color:grey;
+    margin-top: 1em;
+    word-spacing: 0.7em;
+    text-decoration: solid;
+}
+
+.button{
+    margin: 1em;
+    
+}
+
+
+
+
+
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: green;
+}
+.box3{
+    background-color: grey;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    animation: pusher 2s 0s infinite alternate-reverse both;
+
+}
+@keyframes pusher{
+    100%{transform: scale(1) skew(360deg) translate(30px)}
+}
+@media (max-width:673px) {
+    .box{
+        width: 20px;
+        height: 50px;
+    }
+    
+}
